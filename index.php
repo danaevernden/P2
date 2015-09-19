@@ -7,18 +7,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="favicon.ico">
-    <?php require 'logic.php';?>
+    <?php require('logic.php'); ?>
   </head>
   <body>
     <div class="container">
       <h1>xkcd Password Generator</h1>
       <div class="password">
         <h1>
-
+          <!--may need to comment this out-->
+          <?php echo $password ?>
         </h1>
       </div>
 
-      <form>
+      <form method='POST' action='index.php'>
         <div class="col-md-6">
           <img src="xkcd polo.png" class="polo" title="polo!"/>
         </div>
@@ -30,7 +31,6 @@
           Include a special symbol (@!&$#%)
           <br><br>
           <input type="submit" value="Generate">
-        </div>
       </form>
         <br>
       <a href="http://xkcd.com/936/" target="_blank">
