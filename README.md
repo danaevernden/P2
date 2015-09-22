@@ -27,32 +27,14 @@ http://www.w3schools.com/cssref/css3_pr_columns.asp
 http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_dropdown-menu&stacked=h
 favicon generator
 
+dropdown form:
+http://www.echoecho.com/htmlforms11.htm
+
 To do:
--fix margin on comic
 -fix box for password
--change text box dropdown - see below
--add javascript to animate page link
+-finish buildling first letter of each word uppercase -
+----currently in index
+-clean up both codes
 -add explanation
--add logic
--edit pologuy in column
 -comment on piazza
 -add extra challenges
-
-
--get this to work: 
-<div class="col-md-6">
-  <div> Include this many words </div>
-  <div class="dropdown">
-     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">number of words
-     <span class="caret"></span></button>
-     <ul class="dropdown-menu">
-       <li><a href="#">3</a></li>
-       <li><a href="#">4</a></li>
-       <li><a href="#">5</a></li>
-       <li><a href="#">6</a></li>
-       <li><a href="#">7</a></li>
-       <li><a href="#">8</a></li>
-       <li><a href="#">9</a></li>
-     </ul>
-   </div>
-   <br>

@@ -1,10 +1,14 @@
 .container{
 font-family: "Comic Sans MS";
 margin:auto;
-width:80%;
+width:100%;
 text-align:center;
 }
 
+.container img{
+position:relative;
+right:0;
+}
 .password{
 background-color: rgb(175,197,204);
 width: 100%;
@@ -23,12 +27,14 @@ margin-top:400px;
 
 .comic{
 max-width: 100%;
-height: auto;
-width: auto\9; /*ie8*/
-margin-left:33%;
-margin-right:33%;
+position: fixed;
+margin-left:8em;
+margin-right:8em;
 }
 
+.hatguy{
+width:20px;
+}
 .polo{
 height: 100px;
 width: 100px;
