@@ -12,11 +12,10 @@
   <body>
     <div class="container">
       <h1>xkcd Password Generator</h1>
-      <img src="xkcd polo.png" class="polo" title="polo!"/>
+      <img src="xkcd polo.png" class="polo" title="polo!" alt="pologuy"/>
 
       <div class="password">
         <h1>
-          <!--may need to comment this out-->
           <?php echo $password ?>
         </h1>
       </div>
@@ -33,8 +32,7 @@
       ?>
 
       <form method='GET' action='index.php' name='numWords'>
-        <!--  Enter number of words (min 3, max 9)*
-        -->  Number of words
+          Number of words
           <select name="numWords">
             <option value="3"
             <?php keepselection(3, 'numWords') ?>
@@ -63,7 +61,7 @@
           <?php keepselectionB('inclNumber') ?>
           >
           Include a number
-          <img src="hatguy.jpg" class="hatguy">
+          <img src="hatguy.jpg" class="hatguy" alt="hatguy">
           How many
           <select name="numNumber">
             <option value="1"
@@ -86,8 +84,8 @@
           <input type="checkbox" name="inclSymbol"
           <?php keepselectionB('inclSymbol') ?>
           >
-          Include a special symbol (@!&$#%)
-          <img src="hatguy.jpg" class="hatguy">
+          Include a special symbol (@!$#%)
+          <img src="hatguy.jpg" class="hatguy" alt="hatguy">
           How many
           <select name="numSymbol">
             <option value="1"
@@ -113,20 +111,13 @@
           <input type="submit" value="Generate">
           <br><br>
       </form>
-
-      <a href="#explanation">Explanation</a>
       <br>
       <a href="http://xkcd.com/936/" target="_blank">
-        <img src="xkcd comic.png" title="comic" class="comic" style="max-width:500px;"/>
+        <img src="xkcd comic.png" title="comic" class="comic" alt ="comic" style="max-width:500px;"/>
       </a>
       <br><br>
       <a href="http://xkcd.com/936/"> xkcd Password Strength comic </a>
       <br>
-
-      <a name="explanation"></a>
-      <div class "explanation">
-        Password Generator Explained:
-      </div>
     </div>
   </body>
 </html>

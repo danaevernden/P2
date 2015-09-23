@@ -49,10 +49,13 @@ if (isset($_GET['inclSymbol'])) {
   }
 }
 
+# validation. This was added when the number of words field was
+# not a dropdown. Even though it'll probably never be used, I'll
+# leave it in here for now to showcase my committment to
+# a website with validation!
 if (isset($_GET['numWords'])) {
   if ($_GET['numWords']>9 or $_GET['numWords']<3){
     $password = "sorry, please enter a number between 3 and 9";
-
   }
 }
 
