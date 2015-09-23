@@ -11,7 +11,7 @@ Features:
 4. comic provided for explanation
 
 ##Link to screencast
-[xkcd password generator screencast]
+[kxcd password generator screencast]
 
 ##Details for teaching team
 I would have liked to implement an option for uppercase OR first letter of each word capitalized, but in the end I couldn't get it to work in time.
