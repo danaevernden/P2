@@ -106,7 +106,9 @@
             >5</option>
           </select>
           <br>
-          <input type="checkbox" name="uppercase">
+          <input type="checkbox" name="uppercase"
+          <?php keepselectionB('uppercase') ?>
+          >
            All uppercase?
           <br>
           <input type="submit" value="Generate">
