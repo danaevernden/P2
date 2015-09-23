@@ -19,13 +19,13 @@ I would have liked to implement an option for uppercase OR first letter of each 
 I used two stackoverflow message boards as learning sources to enable checkboxes and dropdowns to stay selected after submission. I think it's a pretty cool feature!
 
 ##Outside code
-[Polo guy]
-[nod to kxcd]
-[words list source code]
-[learned how to make a dropdown menu]
-[learned how to keep dropdown option selected]
-[learned how to keep checkbox checked]
-[favicon generator]
+- [Polo guy]
+- [nod to kxcd]
+- [words list source code]
+- [learned how to make a dropdown menu]
+- [learned how to keep dropdown option selected]
+- [learned how to keep checkbox checked]
+- [favicon generator]
 
 
 
