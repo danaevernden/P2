@@ -20,7 +20,7 @@ I used two stackoverflow message boards as learning sources to enable checkboxes
 
 ##Outside code
 - [Polo guy]
-- [nod to kxcd]
+- [nod to xkcd]
 - [words list source code]
 - [learned how to make a dropdown menu]
 - [learned how to keep dropdown option selected]
@@ -33,10 +33,17 @@ I used two stackoverflow message boards as learning sources to enable checkboxes
 [//]:
 
 [P2]: <http://p2.danaevernden.com>
+
 [Polo guy]: <http://s250.photobucket.com/user/CivBase/media/polo.png.html>
+
 [nod to xkcd]: <http://xkcd.com/license.html>
+
 [words list source code]: <http://www.mieliestronk.com/corncob_lowercase.txt>
+
 [learned how to make a dropdown menu]: <http://www.echoecho.com/htmlforms11.htm>
+
 [learned how to keep dropdown option selected]: <http://stackoverflow.com/questions/18230021/search-html-form-how-to-keep-value-selected-from-dropdown-list-after-submit>
+
 [learned how to keep checkbox checked]: <http://stackoverflow.com/questions/12541419/php-keep-checkbox-checked-after-submitting-form>
+
 [favicon generator]: <http://www.favicon-generator.org/>
