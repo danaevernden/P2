@@ -1,58 +1,36 @@
 <?php
-# create the words array
-$words = Array (
-'refugee', 'heart', 'favor', 'dispatch', 'production', 'faith',
-'serpent', 'digital', 'concussion', 'doberman', 'pilgrim', 'waffles',
-'rainbow', 'monkey', 'correct', 'horse', 'battery', 'staple',
-'arbitrary', 'bellyache', 'hard', 'murica', 'hot', 'common',
-'basket', 'bigwig', 'execute', 'barnyard', 'chapter', 'sweat',
-'bench', 'slap', 'blurry', 'chewable', 'vitamin', 'life',
-'blade', 'wig', 'howling', 'hoop', 'expert', 'classic','reckless',
-'think', 'pipes', 'black', 'breaking', 'barnacle'
-);
-
-## testing web scraping
-//$homepage = file_get_contents('http://www.paulnoll.com/Books/Clear-English/words-01-02-hundred.html');
-#print_r($homepage);
-//preg_match_all("~<li>(.*?)</li>"~s, $homepage, $out, PREG_PATTERN_ORDER);
-//print_r($out[1]);
-#|<[^>]+>(.*)</[^>]+>|
-##end testing web scraping
+# words and symbols arrays
+$words = file('corncob_lowercase.txt', FILE_IGNORE_NEW_LINES);
+$symbols = Array ('!', '@', '#', '$', '%', '&');
 
 $wordslen = sizeof($words);
-// print(sizeof($words)); #testing
-//print_r($_GET['numWords']); #testing
 
-$symbols = Array ('!', '@', '#', '$', '%', '&');
-# create the password array
-
-$password = '';
-$random_word=array_rand($words,3);
-$password = $words[$random_word[0]];
-
-#generate the password here, initially one word
-for ($i =1; $i<3; $i++){
-$password = $password.'-'.$words[$random_word[$i]];
+# create the initial password, 3 words long
+for ($i=0; $i<3; $i++){
+  $random_word= rand(0,$wordslen);
+  if ($i == 0){
+    $password = $words[$random_word];
+  }
+else{
+  $password = $password.'-'.$words[$random_word];
+  }
 }
 
 #add on to the password according to the desired length
-#a second way - using the rand() function
 if(isset($_GET['numWords'])){
   for ($i = 1; $i < $_GET['numWords']-2; $i++) {
     $random = rand(0,$wordslen-1);
     $password = $password.'-'.$words[$random];
   }
+  # if uppercase is specified, change letters to uppercase
   if(isset($_GET['uppercase'])){
-    if($_GET['uppercase']){
       $password = strtoupper($password);
     }
-  }
 }
 
 
 # if the number box is checked, append a random number to the
 # end of the password
-//print $_GET['inclNumber']; #testing
 
 if (isset($_GET['inclNumber'])) {
   if ($_GET['inclNumber']) {
@@ -77,13 +55,5 @@ if (isset($_GET['numWords'])) {
 
   }
 }
-// print $symbols[rand(0,5)] #testing
-# To do
-# 2. add extra challenges
-# - Spaces or camelCase or hyphens.
-# - Error checking: For example, what happens if a user
-#   enters a string instead of an integer for # of words?
-# - Scrape an online word list to build a really long
-#   word list. (No clue where to start? Here's an outline
-#   for approach).
+
 ?>
