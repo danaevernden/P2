@@ -11,7 +11,7 @@ Features:
 4. comic provided for explanation
 
 ##Link to screencast
-
+[xkcd password generator screencast]
 
 ##Details for teaching team
 I would have liked to implement an option for uppercase OR first letter of each word capitalized, but in the end I couldn't get it to work in time.
@@ -37,6 +37,8 @@ I used two stackoverflow message boards as learning sources to enable checkboxes
 [Polo guy]: <http://s250.photobucket.com/user/CivBase/media/polo.png.html>
 
 [nod to xkcd]: <http://xkcd.com/license.html>
+
+[kxcd password generator screencast]: <http://screencast.com/t/2VWOdBDD2>
 
 [words list source code]: <http://www.mieliestronk.com/corncob_lowercase.txt>
 
